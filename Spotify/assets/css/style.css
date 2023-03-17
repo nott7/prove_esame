@@ -9,6 +9,7 @@
 body {
   font-family: "Nunito", sans-serif;
   background-color: #121212;
+  color: #fff;
 }
 
 .header_top{
@@ -69,7 +70,7 @@ body {
   font-family: inherit;
   font-size: 1.2rem;
   background-color: #1db954;
-  color: #ffffff;
+  color: #fff;
   border: 0;
   cursor: pointer;
 }
@@ -100,9 +101,52 @@ body {
 
 .header_bottom > nav > ul > li > a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 .header_bottom > nav > ul > li > a:hover{
     text-decoration: underline;
+}
+
+main {
+    max-width: 1300px;
+    margin: 4rem auto 0 auto;
+}
+
+.artist_header{
+    display: flex;
+    height: 300px;
+    padding: 2rem 4rem;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(18, 18, 18, 0.747),
+        rgba(19, 19, 19, 0.953)
+      ), url(/Spotify/assets/images/lazza-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artist_header-left {
+    margin-right: 3rem;
+}
+
+.artist_header-left > img{
+    width: 250px;
+    border-radius: 50%;
+    
+}
+
+.artist_header-right > h1 {
+    font-size: 5rem;
+}
+
+.artist_header-right > p {
+    font-size: 2rem;
+}
+
+.artist_header-right > p > i {
+    color: #189644;
+    margin-right: 10px;
 }
