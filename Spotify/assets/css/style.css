@@ -117,6 +117,7 @@ main {
     display: flex;
     height: 300px;
     padding: 2rem 4rem;
+    margin-bottom: 2rem;
     align-items: center;
     background-image: linear-gradient(
         to bottom,
@@ -151,6 +152,53 @@ main {
     margin-right: 10px;
 }
 
+.artist_buttons {
+    display: flex;
+    align-items: center;
+}
+
+.artist_buttons > button:first-child{
+    padding: 0.8rem 1.3rem;
+    border: 0;
+    background-color: #1db954;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.artist_buttons > button:nth-child(2){
+    padding: 1rem;
+    border: 0;
+    background-color: transparent;
+    border: 1px solid #189644;
+    text-transform: uppercase;
+    font-family: inherit;
+    cursor: pointer;
+    margin: 0 2rem;
+    font-weight: bold;
+    color: #1db954;
+    border-radius: 10px;
+}
+
+.artist_buttons > button:first-child:hover, .footer_center-top > button:hover {
+    background-color: #189644;
+}
+
+.artist_buttons > button:nth-child(2):hover{
+    background-color: #1db954;
+    color: white;
+}
+
+.artist_buttons > i {
+    font-size: 2rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.artist_buttons > i:hover{
+    opacity: 1;
+}
+
 .artist_popular {
     margin-top: 2rem;
 }
@@ -180,4 +228,115 @@ main {
 .artist_popular-song--left > img{
     width: 60px;
     margin: 0 1rem;
+}
+
+
+.artist_discography {
+    margin: 1rem 0;
+}
+
+.artist_discography-header {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.artist_discography-header > p {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.artist_discography-header > p:hover{
+    opacity: 1;
+}
+
+.artist_discography-cards {
+    display: flex;
+}
+
+.artist_discography-card {
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: #38383829;
+    width: fit-content;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.artist_discography-card:hover{
+    background-color: #38383867;
+}
+
+.artist_discography-card > img{
+    width: 175px;
+}
+
+.artist_discography-card > h3{
+    margin: 10px 0;
+}
+
+footer {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 1rem;
+ background-color: #0a0a0a;
+}
+
+.footer_left {
+    display: flex;
+    align-items: center;
+}
+
+.footer_left > img {
+    width: 60px;
+    margin-right: 22px;
+}
+
+.footer_center {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_center-top > button {
+    margin: 0 10px;
+    padding: 0.6rem 0.8rem;
+    border: 0;
+    background-color: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+ footer  i {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+footer i:hover {
+    opacity: 1;
+}
+
+
+.footer_center-bottom{
+    z-index: 1;
+    margin-top: 10px;
+    height: 6px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #ccc4;
+}
+
+.progress {
+    z-index: 2;
+    width: 30%;
+    border-radius: 10px;
+    height: 100%;
+    color: white;
+}
+
+.footer_right > i {
+    margin-right: 10px;
 }
